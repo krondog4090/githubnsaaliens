@@ -1,0 +1,691 @@
+@font-face {
+  font-family: Dwarvesc;
+  src: url('../../assets/fonts/DWARVESC.TTF');
+}
+
+html,
+body {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iMTIwJSIgc3RvcC1jb2xvcj0iIzExMjIzMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: radial-gradient(circle at center center, #074b89 0%, #16150c 120%);
+  /* background-image: radial-gradient(circle at center center, #074b89 0%, #025306 120%); */
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* border: 1px dotted orange; */
+  cursor: url(http://cur.cursors-4u.net/games/gam-4/gam372.cur), auto !important;
+}
+
+
+.header {
+  text-align: center;
+  /* border: 2px dotted blue; */
+  
+}
+
+.body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodydruid {
+  background-image: radial-gradient(circle at center center, #3a8100 0%, #16150c 120%);
+  background-image: radial-gradient(circle at center center, orange 0%, #16150c 120%);
+  text-align: center;
+  width: null;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyherb {
+  background-image: radial-gradient(circle at center center, #3a8100 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  width: null;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodymining {
+  background-image: radial-gradient(circle at center center, #4d3000 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyskinning {
+  background-image: radial-gradient(circle at center center, #8a5500 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyalchemy {
+  background-image: radial-gradient(circle at center center, #42d8b5 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyblacksmithing {
+  background-image: radial-gradient(circle at center center, #788381 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyenchanting {
+  background-image: radial-gradient(circle at center center, #e82559 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyengineering {
+  background-image: radial-gradient(circle at center center, #798700 0%, #16150c3d 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyleatherworking {
+  background-image: radial-gradient(circle at center center, #5a2c00 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodytailoring {
+  background-image: radial-gradient(circle at center center, #00106d6e 0%, #16150c 120%);
+  border: .2px solid #ffcc33;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column1 {
+  /* background-color: rgba(0, 0, 0, 0.295); */
+  display: flex;
+  flex-direction: column;
+  /* border: 2px dotted red; */
+  padding: 5px;
+}
+
+.column2 {
+  background-color: rgba(0, 0, 0, 0.295);
+  display: flex;
+  flex-direction: column;
+  /* border: 2px dotted red; */
+}
+
+.row1 {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgba(0, 0, 0, 0.295); */
+  justify-content: center;
+  /* border: 2px dotted red; */
+}
+
+.row1shadow {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.295);
+  border: 2px solid #ffcc33;
+  background-color: rgba(0, 0, 0, 0.295);
+  box-shadow: 10px 10px;
+  /* border: 2px dotted red; */
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px dotted red; */
+  padding: 15px;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #ffcc33; */
+  background-image: radial-gradient(circle at center center, #ffcc33 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxdruid {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #FF7D0A; */
+  background-image: radial-gradient(circle at center center, orange 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxhunter {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #ABD473; */
+  background-image: radial-gradient(circle at center center, #ABD473 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxmage {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #69CCF0; */
+  background-image: radial-gradient(circle at center center, #69CCF0 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxpaladin {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #F58CBA; */
+  background-image: radial-gradient(circle at center center, #F58CBA 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxpriest {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #FFFFFF; */
+  background-image: radial-gradient(circle at center center, #FFFFFF 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxrogue {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #FFF569; */
+  background-image: radial-gradient(circle at center center, #FFF569, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxwarlock {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #9482C9; */
+  background-image: radial-gradient(circle at center center, #9482C9 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.boxwarrior {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  /* background-color: #C79C6E; */
+  background-image: radial-gradient(circle at center center, #C79C6E 0%, #16150c 120%);
+  border: 2px solid black;
+  border-radius: 3%;
+  /* margin: 10px; */
+}
+
+.profboxheader {
+  float: right;
+}
+
+.profsimage {
+  width: 52px;
+  height: 52px;
+}
+
+.imagebox {
+  width: 420px;
+  height: null;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ffcc33;
+  background-color: rgba(0, 0, 0, 0.295);
+  box-shadow: 10px 15px;
+  text-align: center;
+  /* border: 1px dotted white; */
+}
+
+.textlinkbox {
+  width: 320px;
+  /* border: 1px dotted green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.navcontainer {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  flex-direction: column;
+  /* border: 2px dotted green; */
+}
+
+.navbarlinks {
+  text-decoration: none;
+  color: #ffcc33;
+  font-family: 'Dwarvesc';
+  font-size: 18px;
+}
+
+.faction-logo {
+  height: 10%;
+  width: 10%;
+}
+
+.factionpicker {
+  display: inline-block;
+  padding: 0;
+  height: 40px;
+  overflow: hidden;
+  transition: all .3s ease;
+  margin: 0 20px 10px 0;
+  vertical-align: top;
+  width: 160px;
+  /* background-color: white; */
+}
+
+.factionflag {
+  height: 15%;
+  width: 15%;
+}
+
+.factionpicker:hover {
+  /* don't forget the 1px border */
+  height: 81px;
+}
+
+.factionpicker a {
+  color: #ffcc33;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Dwarvesc';
+}
+
+.factionpicker li {
+  display: block;
+  padding: 0px 20px;
+  line-height: 40px;
+}
+
+.factionpicker a:first-child li {
+  border: none;
+}
+
+.factionpicker li img {
+  margin-right: 5px;
+}
+
+.roundborders {
+  border-radius: 5px;
+}
+
+.large:hover {
+  height: 245px;
+}
+
+/*  */
+
+.pagepicker {
+  display: inline-block;
+  padding: 0;
+  height: 40px;
+  overflow: hidden;
+  transition: all .3s ease;
+  margin: 0 20px 10px 0;
+  vertical-align: top;
+  width: 160px;
+  /* background-color: white; */
+}
+
+/* .factionflag {
+    height: 15%;
+    width: 15%;
+  } */
+
+.pagepicker:hover {
+  /* don't forget the 1px border */
+  height: 81px;
+}
+
+.pagepicker a {
+  color: #ffcc33;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Dwarvesc';
+}
+
+.pagepicker li {
+  display: block;
+  padding: 0px 20px;
+  line-height: 40px;
+}
+
+.pagepicker a:first-child li {
+  border: none;
+}
+
+.pagepicker li img {
+  margin-right: 5px;
+}
+
+.professionheader {
+  color: #ffcc33;
+  font-size: 48px;
+  text-decoration: none;
+  font-family: 'Dwarvesc';
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
+.bottomheader {
+  color: #ffcc33;
+  font-size: 32px;
+  text-decoration: none;
+  font-family: 'Dwarvesc';
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
+.professionheader2 {
+  color: #ffcc33;
+  font-size: 32px;
+  text-decoration: none;
+  font-family: 'Dwarvesc';
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
+.professionheader3 {
+  color: #ffcc33;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+  /* font-family: 'Dwarvesc'; */
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
+.professionheaderlogo {
+  height: 216px;
+  width: null;
+}
+
+.subimage {
+  height: 80px;
+  width: null;
+  border-radius: 3%;
+  /* border: 3px solid #ffcc33; */
+}
+
+.itemcomponent {
+  /* border: 1px dotted brown; */
+  /* background-color: rgba(255, 217, 0, 0.5); */
+}
+
+.itemcomponent {
+  /* border: 1px dotted brown; */
+  padding: 15px;
+  /* background-color: rgba(255, 217, 0, 0.5); */
+}
+
+.itemcomponenttextheader {
+  color: white;
+  font-size: 22px;
+  font-family: 'Dwarvesc';
+}
+
+.itemcomponenttextheader:hover {
+  text-decoration: none;
+}
+
+.paratext {
+  color: #ffcc33;
+  text-decoration: none;
+}
+
+.parabox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px dotted yellow; */
+  width: 660px;
+}
+
+.sectionbox {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px dotted yellow; */
+  border: 2px solid #ffcc33;
+  background-color: rgba(101, 86, 86, 0.226);
+  /* box-shadow: 5px 5px; */
+}
+
+.mapimages {
+  height: 220px;
+  width: null;
+  transition: transform 0.25s ease;
+  border: 1.5px solid #ffcc33
+}
+
+.mapimages:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(2.5);
+}
+
+.bottombutton {
+  /* border: 2px dotted red; */
+  padding: 15px;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.table-wrapper {
+  width: null;
+}
+
+table {
+  position: relative;
+  background-color: #16150c;
+  /* border: 1px dotted #ffcc33; */
+  /* border-collapse: collapse; */
+}
+
+td,
+th {
+  /* white-space: nowrap; */
+  border: .5px solid #ffcc3323;
+  padding: 3px;
+  margin: 1px;
+  text-align: center;
+  /* background-color: rgba(0, 0, 255, 0.442); */
+}
+
+th {
+  /* background-color: #eee; */
+  /* position: sticky; */
+  top: -1px;
+  z-index: 2;
+}
+
+tbody tr td:first-of-type {
+  background-color: #16150c;
+  padding: 1px;
+  text-align: center;
+  /* position: sticky; */
+  left: -1px;
+  text-align: left;
+}
+
+.tableheader {
+  color: #ffcc33;
+  background-color: #9b977648;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Dwarvesc';
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
+.matslist {
+  display: flex;
+  flex-direction: column;
+  width: null;
+  justify-content: center;
+  align-content: center;
+  font-size: 12px;
+}
+
+.matsicon {
+  width: 12px;
+  height: null;
+}
+
+.matsiconlist {
+  width: 26px;
+  height: null;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin: 10px;
+  right: 5px;
+}
+
+.matsbigicon {
+  width: 62px;
+  height: null;
+  border: 3px solid #251c03;
+}
+
+.imagebox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: null;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid #ffcc33;
+  border-radius: 3%;
+  background-image: radial-gradient(circle at center center, #C79C6E 0%, #16150c 120%);
+  box-shadow: 5px 5px;
+  text-align: center;
+}
+
+.professionheader4 {
+  /* color: #ffcc33; */
+  font-size: 14px;
+  text-decoration: none;
+  /* padding: 15px; */
+  margin: 5px;
+  /* font-family: 'Dwarvesc'; */
+  /* text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000; */
+}
+
+a {
+  color: black;
+  font-family: Dwarvesc;
+  text-decoration: none;
+  cursor: url(http://cur.cursors-4u.net/games/gam-4/gam372.cur), auto !important;
+  margin: 5px;
+  /* width: null; */
+}
+
+.matsicon2 {
+  padding-right: 5px;
+}
+
+.test1 {
+  display: flex;
+  flex-direction: column;
+  border: .5px solid #ffcc3323;
+  background-color: #251c03d7;
+  width: null;
+}
